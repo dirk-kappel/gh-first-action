@@ -1,0 +1,12 @@
+# Name the file
+name: First Workflow
+# The events that trigger the workflow
+on: workflow_dispatch  # Manually trigger workflow
+jobs: # Define a job, no value
+  first-job: # job name, no value
+    runs-on: ubuntu-latest # The runner. Github jobs runners
+    steps: # Define a list of steps, no value
+      - name: Print greeting # Name the step
+        run: echo "Hello World!" # Execute a command
+      - name: Print goodbye
+        run: echo "Done - bye!"
